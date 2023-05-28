@@ -1,9 +1,85 @@
-<mxfile host="app.diagrams.net" modified="2023-05-28T16:18:00.316Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" version="21.2.7" etag="WKT6AtVmU_Cg2yNkwHSQ" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-28T16:45:36.797Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="g-R5yHgxFthL2p3LVWB-" version="21.2.7" type="github">
   <diagram name="Page-1" id="z8FkEmQAVXvpyBzzEVsv">
-    <mxGraphModel>
+    <mxGraphModel dx="2045" dy="1742" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="-keNHi23kG7ble7oT1GK-38" value="Layer 0: Database&lt;br&gt;&lt;br&gt;Postgres" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-50" y="740" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="-keNHi23kG7ble7oT1GK-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=65;entryDy=180;entryPerimeter=0;" edge="1" parent="1" source="-keNHi23kG7ble7oT1GK-40" target="-keNHi23kG7ble7oT1GK-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-keNHi23kG7ble7oT1GK-40" value="Layer 1: Server API&lt;br&gt;&lt;br&gt;Nest JS API Server" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-480" y="630" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="-keNHi23kG7ble7oT1GK-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-keNHi23kG7ble7oT1GK-45" target="-keNHi23kG7ble7oT1GK-40">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-160" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-keNHi23kG7ble7oT1GK-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.025;entryY=0.233;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="-keNHi23kG7ble7oT1GK-45" target="-keNHi23kG7ble7oT1GK-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-keNHi23kG7ble7oT1GK-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-keNHi23kG7ble7oT1GK-45" target="-keNHi23kG7ble7oT1GK-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-keNHi23kG7ble7oT1GK-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.033;entryY=0.567;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="-keNHi23kG7ble7oT1GK-45" target="-keNHi23kG7ble7oT1GK-52">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="208" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-keNHi23kG7ble7oT1GK-45" value="Layer 2: NGINX Manager&lt;br&gt;&lt;br&gt;Load Balance&lt;br&gt;Round Robin Algorithm" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-30" y="310" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="-keNHi23kG7ble7oT1GK-54" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-keNHi23kG7ble7oT1GK-47">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="42" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-keNHi23kG7ble7oT1GK-47" value="Layer 3: Client Interface&lt;br&gt;&lt;br&gt;API KEY&lt;br&gt;Auth Token&lt;br&gt;&lt;br&gt;Web App&amp;nbsp;&lt;br&gt;Mobile App" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-300" y="140" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="-keNHi23kG7ble7oT1GK-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=55;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="-keNHi23kG7ble7oT1GK-49" target="-keNHi23kG7ble7oT1GK-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-keNHi23kG7ble7oT1GK-49" value="Layer 1: Server API&lt;br&gt;&lt;br&gt;Nest JS API Server" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="340" y="620" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="-keNHi23kG7ble7oT1GK-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.008;entryY=0.55;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="-keNHi23kG7ble7oT1GK-53" target="-keNHi23kG7ble7oT1GK-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-keNHi23kG7ble7oT1GK-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=85;entryPerimeter=0;" edge="1" parent="1" source="-keNHi23kG7ble7oT1GK-52" target="-keNHi23kG7ble7oT1GK-38">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="50" y="730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-keNHi23kG7ble7oT1GK-52" value="Layer 1: Server API&lt;br&gt;&lt;br&gt;Nest JS API Server" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="130" y="530" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="-keNHi23kG7ble7oT1GK-53" value="Layer 1: Server API&lt;br&gt;&lt;br&gt;Nest JS API Server" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-230" y="530" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="-keNHi23kG7ble7oT1GK-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-keNHi23kG7ble7oT1GK-55" target="-keNHi23kG7ble7oT1GK-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-keNHi23kG7ble7oT1GK-55" value="Nomal USers" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-225" y="-20" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-keNHi23kG7ble7oT1GK-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=85;entryPerimeter=0;" edge="1" parent="1" source="-keNHi23kG7ble7oT1GK-57" target="-keNHi23kG7ble7oT1GK-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-keNHi23kG7ble7oT1GK-57" value="Layer 3: Admin Interface&lt;br&gt;&lt;br&gt;Admin Web App" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="200" y="140" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="-keNHi23kG7ble7oT1GK-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.083;entryY=0.528;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="-keNHi23kG7ble7oT1GK-60" target="-keNHi23kG7ble7oT1GK-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-keNHi23kG7ble7oT1GK-60" value="Management Panel" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="-20" width="30" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
